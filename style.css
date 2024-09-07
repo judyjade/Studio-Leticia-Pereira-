@@ -117,7 +117,6 @@ body {
 .titulo-secundario {
     padding: 2em 0 1em 0;
     font-size: 26px;
-    margin: 0.5em;
 }
 
 .texto-secundario, .texto-secundario2 {
@@ -137,6 +136,7 @@ body {
 
 .redes-img {
     width: 80%;
+    margin-top: 15px;
 }
 
 .fundo-degrade {
