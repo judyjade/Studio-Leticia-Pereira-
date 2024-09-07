@@ -48,7 +48,7 @@ body {
     height: 100%;
 }
 
-img {
+.img-capa {
     width: 69%;
     border-radius: 10%;
     margin-top: 1em;
@@ -116,7 +116,8 @@ img {
 
 .titulo-secundario {
     padding: 2em 0 1em 0;
-    font-size: 27px;
+    font-size: 26px;
+    margin: 0.5em;
 }
 
 .texto-secundario, .texto-secundario2 {
@@ -159,4 +160,74 @@ footer {
 
 .Copyright{
     font-size: 10px;
+}
+
+/*Css da pagina de sobrancelhas*/
+
+.body-pag2 {
+    background-color: #5c5757;
+}
+
+.navegador {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--cor-botao);
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.cabecalho {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.5s all;
+}
+
+.cabecalho:hover {
+    font-size: 24px;
+}
+
+.img-pagina {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-slide {
+    width: 94.5vw;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 2em 0;
+}
+
+.paginas-slide {
+    display: inline-block;
+    animation: anima 110s linear infinite;
+}
+
+.paginas-slide img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+#img-rotativo {
+    width: 189px;
+}
+
+@keyframes anima {
+    0% { 
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.lista {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+li {
+    margin-bottom: 0.3em;
 }
