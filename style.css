@@ -193,7 +193,7 @@ footer {
 }
 
 .container-slide {
-    width: 94.5vw;
+    width: 98.5vw;
     white-space: nowrap;
     overflow: hidden;
     margin: 2em 0;
@@ -201,15 +201,24 @@ footer {
 
 .paginas-slide {
     display: inline-block;
-    animation: anima 110s linear infinite;
+    animation: anima 70s linear infinite;
 }
 
-.paginas-slide img {
+.paginas-slide2 {
+    display: inline-block;
+    animation: anima 30s linear infinite;
+}
+
+.paginas-slide img, .paginas-slide2 img {
     width: 250px;
     border-radius: 15px;
 }
 
 #img-rotativo {
+    width: 189px;
+}
+
+#img-rotativo2 {
     width: 189px;
 }
 
@@ -229,5 +238,9 @@ footer {
 }
 
 li {
-    margin-bottom: 0.3em;
+    margin-bottom: 0.5em;
+}
+
+.itens-lista {
+    text-align: center;
 }
