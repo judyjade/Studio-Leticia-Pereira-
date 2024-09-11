@@ -117,6 +117,7 @@ body {
 .titulo-secundario {
     padding: 2em 0 1em 0;
     font-size: 26px;
+    text-align: center;
 }
 
 .texto-secundario, .texto-secundario2 {
