@@ -1,0 +1,523 @@
+/* ========== TABLETS (768px - 1024px) ========== */
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+
+  header {
+    padding: 20px 50px;
+  }
+
+  .banner h2 {
+    font-size: 3rem;
+    padding-left: 5em;
+    margin-bottom: 40px;
+  }
+
+  .banner p {
+    font-size: 1.5rem;
+  }
+
+  .who {
+    height: auto;
+    padding: 2em;
+    gap: 20px;
+  }
+
+  .who h3 {
+    font-size: 35px;
+  }
+
+  .who p {
+    font-size: 28px;
+  }
+
+  .img_who {
+    width: 400px;
+    height: 450px;
+  }
+
+  #servicos,
+  #precos,
+  #pacotes {
+    height: auto;
+    padding: 3em 2em;
+  }
+
+  .pack p,
+  .sobrancelhas li,
+  .depilacao li,
+  .cilios li,
+  .combo1 p,
+  .combo2 p,
+  .combo3 p {
+    font-size: 20px;
+  }
+
+  .paginas-slide img {
+    width: 400px;
+    height: 390px;
+  }
+
+  .combo1 {
+    left: 50px;
+  }
+
+  .combo2 {
+    left: 100px;
+  }
+
+  .combo3 {
+    right: 200px;
+  }
+
+  #faq h2 {
+    right: 150px;
+  }
+
+  .faq-box {
+    width: 250px;
+  }
+
+  .pagamento {
+    width: 100%;
+  }
+
+  .pagamento h2 {
+    padding-right: 100px;
+  }
+
+  form {
+    width: 400px;
+    padding: 30px 50px;
+  }
+
+  iframe {
+    width: 90%;
+    height: 60%;
+  }
+}
+
+/* ========== SMARTPHONES (até 767px) ========== */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* HEADER */
+  header {
+    padding: 15px 20px;
+    position: relative;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #636363;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu li {
+    margin: 20px 0;
+  }
+
+  .nav-menu a {
+    font-size: 24px;
+    margin-left: 0;
+  }
+
+  .hamburguer {
+    display: flex;
+    z-index: 1000;
+  }
+
+  .hamburguer.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .hamburguer.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+
+  /* BANNER */
+  .banner {
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .banner div {
+    padding-right: 20px;
+  }
+
+  .banner h2 {
+    font-size: 2rem;
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .banner p {
+    font-size: 1.2rem;
+  }
+
+  /* QUEM SOU */
+  .who {
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .texto_who {
+    padding-left: 0;
+    order: 2;
+  }
+
+  .who h3 {
+    font-size: 28px;
+    margin-left: 0;
+  }
+
+  .who p {
+    font-size: 20px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .img_who {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  /* SERVIÇOS */
+  #servicos,
+  #precos,
+  #pacotes,
+  #como_chegar,
+  #contato {
+    height: auto;
+    padding: 2em 1em;
+  }
+
+  .cards,
+  .tabela,
+  .combos {
+    flex-direction: column;
+  }
+
+  .pack,
+  .sobrancelhas,
+  .depilacao,
+  .cilios,
+  .combo1,
+  .combo2,
+  .combo3 {
+    width: 80% !important;
+    margin: 30px 0;
+  }
+
+  .pack:hover,
+  .sobrancelhas:hover,
+  .depilacao:hover,
+  .cilios:hover,
+  .combo1:hover,
+  .combo2:hover,
+  .combo3:hover {
+    width: 90% !important;
+    font-size: 20px;
+  }
+
+  .pack h4 {
+    bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .pack p {
+    font-size: 18px;
+  }
+
+  .sobrancelhas p,
+  .depilacao p,
+  .cilios p {
+    bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .sobrancelhas li,
+  .depilacao li,
+  .cilios li {
+    font-size: 18px;
+  }
+
+  /* GALERIA E DEPOIMENTOS */
+  #galeria h2,
+  #depoimentos h2 {
+    padding-left: 0;
+  }
+
+  .paginas-slide img {
+    width: 300px;
+    height: 290px;
+    margin-right: 15px;
+  }
+
+  /* PACOTES */
+  .combo1,
+  .combo2,
+  .combo3 {
+    position: static !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .combo1 h4,
+  .combo2 h4,
+  .combo3 h4 {
+    bottom: 20px;
+    font-size: 1.5em;
+  }
+
+  .combo1 p,
+  .combo2 p,
+  .combo3 p {
+    font-size: 18px;
+  }
+
+  /* FAQ */
+  #faq h2 {
+    right: 0;
+    margin-bottom: 50px;
+  }
+
+  .faq-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-box {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 0;
+  }
+
+  .faq-box h3 {
+    font-size: 2rem;
+  }
+
+  .accordion-header {
+    font-size: 1.2rem;
+  }
+
+  .accordion-content p {
+    font-size: 1.1rem;
+  }
+
+  /* COMO CHEGAR */
+  #como_chegar {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .pagamento {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pagamento h2 {
+    padding-right: 0;
+  }
+
+  .pagamento img {
+    width: 20%;
+    max-width: 80px;
+    margin: 40px 10px;
+  }
+
+  .como-chegar {
+    text-align: center;
+  }
+
+  .como-chegar h2 {
+    padding-left: 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  /* CONTATO */
+  #contato {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 30px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
+
+  input,
+  textarea {
+    padding: 20px 5px;
+  }
+
+  #contato button {
+    margin: 20px 0;
+  }
+
+  .redes_sociais {
+    text-align: center;
+  }
+
+  .redes_sociais h2 {
+    padding-left: 0;
+    margin-block: 35px;
+  }
+
+  .redes_sociais img {
+    width: 25%;
+    max-width: 80px;
+    margin: 20px 10px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .menu,
+  .contato {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .contato {
+    bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 24px;
+  }
+
+  .sociais {
+    text-align: center;
+  }
+
+  .sociais img {
+    width: 15%;
+    max-width: 60px;
+    margin: 10px;
+  }
+
+  .sociais img:hover {
+    width: 18%;
+  }
+
+  .creditos {
+    margin-block: 50px 0;
+    font-size: 18px;
+  }
+
+  a {
+    font-size: 18px;
+  }
+
+  a:hover {
+    font-size: 19px;
+  }
+}
+
+/* ========== SMARTPHONES PEQUENOS (até 480px) ========== */
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 28px;
+  }
+
+  .banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .who h3 {
+    font-size: 24px;
+  }
+
+  .who p {
+    font-size: 18px;
+  }
+
+  .img_who {
+    max-width: 280px;
+    height: 320px;
+  }
+
+  .paginas-slide img {
+    width: 250px;
+    height: 240px;
+  }
+
+  .faq-box h3 {
+    font-size: 1.8rem;
+  }
+
+  .accordion-header {
+    font-size: 1rem;
+  }
+
+  .accordion-content p {
+    font-size: 0.95rem;
+  }
+
+  form {
+    max-width: 90%;
+  }
+
+  .pagamento img,
+  .redes_sociais img {
+    width: 22%;
+  }
+
+  .sociais img {
+    width: 18%;
+  }
+}

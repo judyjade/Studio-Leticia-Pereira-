@@ -1,82 +1,502 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <title>Studio Letícia Pereira</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <img src="" alt="Logo do Studio" />
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburguer" id="hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
     <main>
-        <section class="container-principal">
-            <div>
-                <h1 class="principal-titulo">Studio Letícia Pereira</h1>
-                <p class="principal-texto">Aumentar a sua autoestima é o meu objetivo.</p>
-            </div>
-        </section>
-        <section class="container-secundario">
-            <div class="fundo"></div>
-            <div class="sobracelha">
-                <img src="img/img-sobran.capa2.jpg" alt="Foto de um Design com Henna" class="img-capa">
-                <a href="sobran.html" class="botao-catalogo">Catálogo de Sobrancelhas</a>
-            </div>
-        </section>
-        <section class="container-secundario">
-            <div class="fundo2"></div>
-            <div class="depilacao">
-                <img src="img/img-dep.capa3.jpg" alt="Foto de uma depilação da virilha" class="img-capa">
-                <a href="dep.html" class="botao-catalogo">Catálogo de Depilação</a>
-            </div>
-        </section>
-        <section class="container-secundario">
-            <div class="fundo3"></div>
-            <div class="cilios">
-                <img src="img/img-cilios.capa2.jpg" alt="Foto de um cílios com volume" class="capa-cilios img-capa">
-                <a href="cilios.html" class="botao-catalogo2">Catálogo de Cílios</a>
-            </div>
-        </section>
-        <section class="container-secundario fundo-degrade">
-            <h1 class="titulo-secundario">Formas de Pagamento</h1>
-            <div class="pagamento">
-                <img src="img/img-pix2.png" alt="Pagamento via smartphone: pix" class="pagamento-img">
-                <p class="texto-secundario">Pix</p>
-                <img src="img/img-cartão.png" alt="Pagamento via Cartão Crédito/Débito" class="pagamento-img">
-                <p class="texto-secundario">Cartão Crédito/Débito</p>
-                <img src="img/img-dinheiro.png" alt="Pagamento em dinheiro; notas de dinheiro" class="pagamento-img">
-                <p class="texto-secundario">Dinheiro</p>
-            </div>
-        </section>
-        <section class="container-secundario fundo-degrade2">
-            <div class="sem-botao">
-                <img src="img/img-whats.png" alt="Logo do Whatsapp" class="redes-img">
-                <p class="texto-secundario2">(45) 99909-4373</p>
-                <img src="img/img-insta.png" alt="Logo do Instagram" class="redes-img">
-                <a href="https://www.instagram.com/studio_leticia_pereira?igsh=MTUwaHhqZXc1c3l6ZA==" class="texto-secundario2">@studio_leticia_pereira</a>
-            </div>
-            <a href="https://wa.link/ymcpv8" class="botao-catalogo">Agende já o seu horário</a>
-        </section>
-        <section class="container-secundario fundo-degrade">
-            <div class="localizacao">
-                <h1 class="titulo-secundario">Localização <svg xmlns="http://www.w3.org/2000/svg" height="26px"
-                        viewBox="0 -960 960 960" width="26px" fill="#FFFFFF">
-                        <path
-                            d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z" />
-                    </svg></h1>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.480565482061!2d-54.5256019253404!3d-25.489014635227935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878c3aa83fdfbbf9%3A0xed38c2df0f2be3a9!2sStudio%20leticia%20pereira!5e0!3m2!1spt-BR!2sbr!4v1725496292478!5m2!1spt-BR!2sbr"
-                    width="360" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
+      <section id="inicio" class="banner">
+        <div class="texto_banner">
+          <h2>Realce sua beleza com cuidados personalizados!</h2>
+          <p>Especialista em Sobrancelhas, Cílios e Depilação.</p>
+        </div>
+      </section>
+      <section class="who">
+        <div class="texto_who">
+          <h2>Quem sou?</h2>
+          <h3>Me chamo Letícia Pereira</h3>
+          <p>
+            Sou especialista em depilação (+4 anos) e design de sobrancelhas (+5
+            anos) em Foz do Iguaçu – PR. Unindo duas paixões em uma só carreira,
+            fui reconhecida como Melhor Depiladora de 2025, sempre com foco em
+            qualidade e bem-estar.
+          </p>
+        </div>
+        <img
+          src="img/img_quem-sou.jpg"
+          alt="Imagem de um atendimento"
+          class="img_who"
+        />
+      </section>
+      <section id="servicos">
+        <h2>Serviços</h2>
+        <div class="cards">
+          <div class="pack">
+            <h4>Sobrancelhas</h4>
+            <p>
+              Design Personalizado, Design com Henna, Design Masculino,
+              Browlamination, Micropigmentação.
+            </p>
+            <img
+              src="img/servicos_sobrancelhas.jpg"
+              alt="Uma foto de um Design com Henna."
+            />
+          </div>
+          <div class="pack">
+            <h4>Cílios</h4>
+            <p>
+              Volume Brasileiro, Volume 5D, Volume Inglês, Mega Volume
+              Brasileiro, Mega Volume Inglês.
+            </p>
+            <img
+              src="img/serviços_cilios.jpg"
+              alt="Uma foto de uma mulher com um procedimento feito nos cílios."
+            />
+          </div>
+          <div class="pack">
+            <h4>Depilação</h4>
+            <p>
+              Virilha Completa, Axila, Meia Perna, Perna Inteira, Braços,
+              Costas, Peito + Abdômen, Bum Bum, Buço.
+            </p>
+            <img
+              src="img/serviços_dep.jpg"
+              alt="Imagem de uma região do corpo depilada."
+            />
+          </div>
+        </div>
+      </section>
+      <section id="galeria">
+        <h2>Antes X Depois</h2>
+        <div class="container-slide">
+          <div class="paginas-slide">
+            <img
+              src="img/antesXdepois-01.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-02.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+              class="img-grande"
+            />
+            <img
+              src="img/antesXdepois-03.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-04.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-05.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-06.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
 
+            <!--Repetir as imagens-->
+
+            <img
+              src="img/antesXdepois-01.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-02.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+              class="img-grande"
+            />
+            <img
+              src="img/antesXdepois-03.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-04.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-05.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-06.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+
+            <img
+              src="img/antesXdepois-01.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-02.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+              class="img-grande"
+            />
+            <img
+              src="img/antesXdepois-03.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-04.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-05.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+            <img
+              src="img/antesXdepois-06.jpg"
+              alt="Imagens de Antes de Depois de Clientes"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="container-slide">
+          <div class="paginas-slide">
+            <img src="img/Depoimento-01.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-02.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-03.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-04.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-05.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-06.jpg" alt="Imagens de depoimentos de clientes" />
+
+            <img src="img/Depoimento-01.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-02.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-03.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-04.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-05.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-06.jpg" alt="Imagens de depoimentos de clientes" />
+
+            <img src="img/Depoimento-01.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-02.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-03.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-04.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-05.jpg" alt="Imagens de depoimentos de clientes" />
+            <img src="img/Depoimento-06.jpg" alt="Imagens de depoimentos de clientes" />
+          </div>
+        </div>
+      </section>
+      <section id="precos">
+        <h2>Tabela de Preços</h2>
+        <div class="tabela">
+          <div class="sobrancelhas">
+            <p>Sobrancelhas</p>
+            <ul>
+              <li>Design Masculino - R$40,00 (30 min.)</li>
+              <li>Design Personalizado - R$50,00 (40 min.)</li>
+              <li>Design com Henna - R$65,00 (1 h.)</li>
+              <li>Brow Lamination s/ Tintura - R$80,00 (1 h.)</li>
+              <li>Brow Lamination c/ Tintura - R$95,00 (1:30 h.)</li>
+              <li>Micropigmentação - R$350,00 (4 h.)</li>
+            </ul>
+          </div>
+          <div class="depilacao">
+            <p>Depilação</p>
+            <ul>
+              <li>Virilha Completa - R$85,00 (30 min.)</li>
+              <li>Axila - R$30,00 (15 min.)</li>
+              <li>Meia Perna - R$50,00 (15 min.)</li>
+              <li>Perna Inteira - R$70,00 (30 min.)</li>
+              <li>Braços - R$40,00 (15 min.)</li>
+              <li>Costas - R$60,00 (20 min.)</li>
+              <li>Peito + Abdômen - R$80,00 (30 min.)</li>
+              <li>Bum Bum - R$50,00 (10 min.)</li>
+              <li>Buço - R$15,00 (5 min.)</li>
+            </ul>
+          </div>
+          <div class="cilios">
+            <p>Cílios</p>
+            <ul>
+              <li>Lash Lifting c/ Tintura - R$90,00</li>
+              <li>Volume Brasileiro - R$160,00 / Manutenção - R$110,00</li>
+              <li>Volume 5D - R$160,00 / Manutenção - R$110,00</li>
+              <li>Volume Inglês - R$160,00 / Manutenção - R$110,00</li>
+              <li>Mega Volume Brasileiro - R$180,00 / Manutenção - R$120,00</li>
+              <li>Mega Volume Inglês - R$190,00 / Manutenção - R$120,00</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="pacotes">
+        <h2>Pacotes</h2>
+        <div class="combos">
+          <div class="combo1">
+            <h4>Combo 1</h4>
+            <p>Design com Henna + Volume Brasileiro - R$150,00</p>
+          </div>
+          <div class="combo2">
+            <h4>Combo 2</h4>
+            <p>
+              Depilação
+              <br />
+              Braços + Perna Inteira - R$80,00
+            </p>
+          </div>
+          <div class="combo3">
+            <h4>Combo 3</h4>
+            <p>Design Personalizado + Epilação Buço + Volume 5D - R$190,00</p>
+          </div>
+        </div>
+      </section>
+      <section id="faq">
+        <h2>Perguntas Frequentes <span class="faq-icon">💬</span></h2>
+
+        <div class="faq-container">
+          <!-- Sobrancelhas -->
+          <div class="faq-box">
+            <h3>Sobrancelhas</h3>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Qual linha você usa?</button>
+              <div class="accordion-content">
+                <p>
+                  Linha de algodão, mas uso também cera em alguns procedimentos.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Dói muito?</button>
+              <div class="accordion-content">
+                <p>
+                  Depende da sensibilidade da sua pele, mas geralmente não dói
+                  muito.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Você aplica tintura?</button>
+              <div class="accordion-content">
+                <p>Aplico sim! Fica natural e menos marcado que a henna.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Quanto tempo demora?</button>
+              <div class="accordion-content">
+                <p>
+                  Depende do procedimento, mas normalmente leva de 30 a 45
+                  minutos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cílios -->
+          <div class="faq-box">
+            <h3>Cílios</h3>
+
+            <div class="accordion-item">
+              <button class="accordion-header">É muito demorado?</button>
+              <div class="accordion-content">
+                <p>O procedimento leva em torno de 1h30 a 2h.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Você faz fio a fio?</button>
+              <div class="accordion-content">
+                <p>Sim, trabalho com a técnica fio a fio.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">
+                Você trabalha com tufinhos também?
+              </button>
+              <div class="accordion-content">
+                <p>No momento, não trabalho com tufinhos.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Quanto tempo dura?</button>
+              <div class="accordion-content">
+                <p>Dura de 30 a 45 dias, dependendo dos cuidados diários.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depilação -->
+          <div class="faq-box">
+            <h3>Depilação</h3>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Qual cera você usa?</button>
+              <div class="accordion-content">
+                <p>
+                  Uso a cera Depil Bella, excelente para todos os tipos de pele.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Dói muito?</button>
+              <div class="accordion-content">
+                <p>
+                  Depende da sensibilidade da pele, mas é um desconforto rápido.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Deixa a pele flácida?</button>
+              <div class="accordion-content">
+                <p>Não, isso é um mito. A cera não causa flacidez.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Quanto tempo demora?</button>
+              <div class="accordion-content">
+                <p>Depende da área, mas costuma ser rápido e eficiente.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="como_chegar">
+        <div class="pagamento">
+          <h2>Formas de Pagamento</h2>
+
+          <img src="img/icons8-foto-500.png" alt="Ícone do Pix" />
+          <img src="img/dolar.png" alt="Ícone do Sifrão" />
+          <img src="img/cartao-de-credito.png" alt="Ícone do Cartão" />
+        </div>
+
+        <div class="como-chegar">
+          <h2>Como chegar?</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.4805654820457!2d-54.52560192505565!3d-25.48901463522846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878c3aa83fdfbbf9%3A0xed38c2df0f2be3a9!2sStudio%20leticia%20pereira!5e0!3m2!1spt-BR!2sbr!4v1760810620942!5m2!1spt-BR!2sbr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <section id="contato">
+        <form action="https://formspree.io/f/xovkbqvj" method="post">
+          <h2>Contato</h2>
+
+          <label for="nome">Nome Completo</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Digite seu nome completo"
+            required
+          />
+
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            name="telefone"
+            id="telefone"
+            placeholder="Digite um telefone para contato"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Digite seu melhor E-mail"
+            required
+          />
+
+          <label for="mensagem">Digite sua mensagem (Opicional)</label>
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            placeholder="Preferências de horários para agendar, procedimentos que deseja realizar, etc."
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+
+          <p id="mensagem_status"></p>
+        </form>
+        <div class="redes_sociais">
+          <h2>Nos siga nas Redes Sociais!</h2>
+
+          <a href="https://wa.me/5555459909437?text=Ol%C3%A1%2C%20tudo%20bem%3F">
+            <img src="img/whatsapp.png" alt="Ícone do whatsapp" >
+          </a>
+
+          <a href="https://www.instagram.com/studioleticiapereiraa_?igsh=MTUwaHhqZXc1c3l6ZA==">
+            <img src="img/instagram.png" alt="Ícone do instagram">
+          </a>
+
+        </div>
+      </section>
     </main>
     <footer>
-        <p class="Copyright">&copy; Copyright Studio Letícia Pereira - 2024</p>
-    </footer>
-</body>
+      <div class="menu">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#who">Sobre mim</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#como_chegar">Localização</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
 
+      <div class="contato">
+        <h4>Contatos Essenciais</h4>
+          <ul>
+            <li><a href="">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/studioleticiapereiraa_?igsh=MTUwaHhqZXc1c3l6ZA==">Instagram</a></li>
+          </ul>
+      </div>
+
+      <div class="sociais">
+        <a href="https://wa.me/5555459909437?text=Ol%C3%A1%2C%20tudo%20bem%3F">
+        <img src="img/whatsapp.png" alt="Ícone do WhatsApp" class="whatsapp"/>
+        </a>
+        <a href="https://www.instagram.com/studioleticiapereiraa_?igsh=MTUwaHhqZXc1c3l6ZA==">
+        <img src="img/instagram.png" alt="Ícone do instagram" class="instagram"/>
+        </a>
+      </div>
+
+      <h4 class="creditos">Studio Letícia Pereira - 2025</h4>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>

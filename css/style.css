@@ -1,0 +1,579 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-texto: #ffffff;
+  --cor-botao: #1d1b20;
+  --cor-fundo: #beb9b9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--cor-texto);
+  font-size: 20px;
+  background-color: #f8f8f8;
+}
+
+section {
+  color: black;
+}
+
+h2 {
+   font-size: 60px;
+  margin-bottom: 50px;
+}
+
+header {
+  background: #636363;
+  padding: 20px 130px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 40px;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #d4d4d4;
+  margin-left: 27px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ffffff;
+}
+
+.hamburguer {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburguer span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  margin: 4px;
+  transition: 0.3s;
+}
+
+/* Fundo escuro quando o menu estiver ativo */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+  display: none;
+  z-index: 1;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.banner {
+  position: relative;
+  background-image: url('../img/img_banner.jpg'); /* coloque sua imagem aqui */
+  background-size: cover; /* cobre toda a área */
+  background-position: center; /* centraliza o foco */
+  height: 500px; /* ajusta a altura do bloco */
+  display: flex;
+  justify-content: flex-end; /* texto vai para direita */
+  align-items: center;
+  padding: 20px;
+  color: white;
+  text-align: right;
+}
+
+/* Camada escura leve para destacar o texto */
+.banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3); /* deixa a imagem um pouco escura */
+  z-index: 1;
+}
+
+.banner div {
+  position: relative;
+  z-index: 2; /* deixa o texto acima do escurecimento */
+  padding-right: 55px;
+}
+
+.banner h2 {
+  font-size: 4rem;
+  margin: 0;
+  text-align: right;
+  padding-left: 12em;
+  margin-bottom: 60px;
+}
+
+.banner p {
+  font-size: 1.9rem;
+  margin-top: 10px;
+}
+
+.who {
+  height: 500px;
+  padding: 3em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.texto_who {
+  text-align: left;
+  margin-block: 20px;
+  padding-left: 2em;
+}
+
+.who h3 {
+  font-size: 45px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+}
+
+.who p {
+  font-size: 35px;
+  margin-left: 25px;
+  padding-right: 30px;
+}
+
+.img_who {
+  width: 480px;            /* ajuste conforme necessário */
+    height: 550px;           /* ajuste conforme necessário */
+    background-image: url('img/img_quem-sou.jpg');
+    background-size: cover;
+    background-position: center; /* mude pra "right center" se precisar focar outro ponto */
+    border-radius: 6px;
+    /* recorte diagonal (brinque com o primeiro valor para ajustar o ângulo) */
+    clip-path: polygon(5% 0, 70% 0, 100% 100%, 30% 100%);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.8);
+    flex-shrink: 0;
+    margin-inline: auto;
+}
+
+#servicos, #precos, #pacotes, #como_chegar, #contato {
+   height: 600px;
+   padding: 4em 2.5em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pack {
+  background: linear-gradient(to top, rgba(119, 119, 119, 0.555), rgba(255, 255, 255, 0.6));
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+}
+
+.pack:hover {
+  width: 110%;
+  font-size: 25px;
+}
+
+.pack h4 {
+  position: relative;
+  bottom: 38px;
+  font-size: 2em;
+}
+
+.pack p {
+  font-size: 24px;
+}
+
+.pack img {
+  width: 100%;
+  margin-block: 30px 20px;
+  border-radius: 15px;
+}
+
+#galeria, #depoimentos {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#galeria h2, #depoimentos h2 {
+  padding-left: 0.8em;
+}
+
+.container-slide {
+    width: 100vw;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 3em 0;
+}
+
+.paginas-slide {
+    display: inline-block;
+    animation: anima 55s linear infinite;
+}
+
+.paginas-slide img {
+     width: 500px;
+    height: 490px;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+
+@keyframes anima {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.tabela {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sobrancelhas, .depilacao, .cilios {
+  background: linear-gradient(to top, rgba(119, 119, 119, 0.555), rgba(255, 255, 255, 0.6));
+  margin: 15px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+}
+
+.sobrancelhas:hover, .depilacao:hover, .cilios:hover {
+  width: 110%;
+  font-size: 26px;
+}
+
+.sobrancelhas p, .depilacao p, .cilios p {
+  position: relative;
+  bottom: 50px;
+  font-size: 2em;
+}
+
+.sobrancelhas li, .depilacao li, .cilios li {
+  font-size: 24px;
+  list-style: inside;
+  margin-bottom: 10px;
+}
+
+.combos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.combo1, .combo2, .combo3 {
+  background: linear-gradient(to top, rgba(119, 119, 119, 0.555), rgba(255, 255, 255, 0.6));
+  margin: 15px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease-in-out;
+}
+
+.combo1:hover, .combo2:hover, .combo3:hover {
+  width: 110%;
+  font-size: 26px;
+}
+
+.combo1 h4, .combo2 h4, .combo3 h4 {
+  position: relative;
+  bottom: 50px;
+  font-size: 2em;
+}
+
+.combo1 p, .combo2 p, .combo3 p {
+  font-size: 24px;
+  list-style: inside;
+  margin-bottom: 10px;
+}
+
+.combo1 {
+  position: relative;
+  top: 40px;
+  left: 150px;
+}
+
+.combo2 {
+  position: relative;
+  top: 100px;
+  left: 300px;
+}
+
+.combo3 {
+  position: relative;
+  top: 290px;
+  right: 580px;
+}
+
+#faq {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+#faq h2 {
+  position: relative;
+  right: 310px;
+  margin-bottom: 100px;
+}
+
+.faq-icon {
+  font-size: 2.5rem;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.faq-box {
+  background: linear-gradient(to bottom, #f0f0f0, #bfbfbf);
+  padding: 25px 20px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.faq-box h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.accordion-item {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.accordion-header {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #222;
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.accordion-header::after {
+  content: "➤";
+  position: absolute;
+  right: 0;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+}
+
+.accordion-header.active {
+  color: #000;
+}
+
+#como_chegar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pagamento {
+  text-align: left;
+  width: 700px;
+}
+
+.pagamento h2 {
+  padding-right: 300px;
+}
+
+.pagamento img {
+  width: 25%;
+  margin-block: 90px;
+  margin-inline: 7px;
+  background: #636363;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.como-chegar, .redes_sociais {
+  text-align: right;
+}
+
+.como-chegar h2 {
+  padding-left: 300px;
+}
+
+iframe {
+  width: 80%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+#contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 800px;
+}
+
+.redes_sociais h2 {
+  padding-left: 200px;
+}
+
+.redes_sociais img {
+  width: 35%;
+  margin: 25px;
+}
+
+form {
+  background: white;
+  padding: 40px 70px;
+  border-radius: 10px;
+  width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-block: 20px 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  margin-top: 5px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+#contato button {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out all;
+  margin: 30px 25px;
+}
+
+#contato button:hover {
+  background-color: #1d1b20;
+}
+
+#mensagem_status {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #636363;
+  padding: 4em 2.5em;
+}
+
+a {
+  color: #f8f8f8;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+a:hover {
+  font-size: 22px;
+}
+
+li {
+  list-style: none;
+  margin: 5px 20px;
+}
+
+.contato, .menu {
+  display: inline-block;
+}
+
+.contato {
+  position: relative;
+  bottom: 110px;
+}
+
+footer h4 {
+  font-size: 28px;
+  margin: 10px;
+}
+
+.sociais {
+  text-align: right;
+}
+
+.sociais img {
+  width: 10%;
+  margin-right: 40px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.whatsapp {
+  box-shadow: 0px 0px 60px #3cff00;
+  border: #3cff00 solid 0.5px;
+}
+
+.instagram {
+  box-shadow: 0px 0px 60px #e100ff;  
+  border: #e100ff solid 0.5px;
+}
+
+.sociais img:hover {
+  width: 11%;
+}
+
+.creditos {
+  text-align: center;
+  margin-block: 100px 0px;
+}
