@@ -39,8 +39,7 @@
   }
 
   #servicos,
-  #precos,
-  #pacotes {
+  #precos {
     height: auto;
     padding: 3em 2em;
   }
@@ -48,28 +47,13 @@
   .pack p,
   .sobrancelhas li,
   .depilacao li,
-  .cilios li,
-  .combo1 p,
-  .combo2 p,
-  .combo3 p {
+  .cilios li {
     font-size: 20px;
   }
 
   .paginas-slide img {
     width: 400px;
     height: 390px;
-  }
-
-  .combo1 {
-    left: 50px;
-  }
-
-  .combo2 {
-    left: 100px;
-  }
-
-  .combo3 {
-    right: 200px;
   }
 
   #faq h2 {
@@ -117,53 +101,18 @@
     position: relative;
   }
 
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: #636363;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-    z-index: 999;
+  nav {
+    position: absolute;
+    top: 90px;
+    right: 40px;
+    width: 40%;
+    border-radius: 5px;
+    z-index: 3;
   }
 
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .nav-menu li {
-    margin: 20px 0;
-  }
-
-  .nav-menu a {
-    font-size: 24px;
-    margin-left: 0;
-  }
-
-  .hamburguer {
-    display: flex;
-    z-index: 1000;
-  }
-
-  .hamburguer.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
-  }
-
-  .hamburguer.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburguer.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(8px, -8px);
+  .logo {
+    width: 20%;
+    margin-left: 20px;
   }
 
   /* BANNER */
@@ -175,6 +124,7 @@
 
   .banner div {
     padding-right: 20px;
+    margin-top: 11em;
   }
 
   .banner h2 {
@@ -223,7 +173,6 @@
   /* SERVIÇOS */
   #servicos,
   #precos,
-  #pacotes,
   #como_chegar,
   #contato {
     height: auto;
@@ -231,18 +180,14 @@
   }
 
   .cards,
-  .tabela,
-  .combos {
+  .tabela {
     flex-direction: column;
   }
 
   .pack,
   .sobrancelhas,
   .depilacao,
-  .cilios,
-  .combo1,
-  .combo2,
-  .combo3 {
+  .cilios {
     width: 80% !important;
     margin: 30px 0;
   }
@@ -250,21 +195,22 @@
   .pack:hover,
   .sobrancelhas:hover,
   .depilacao:hover,
-  .cilios:hover,
-  .combo1:hover,
-  .combo2:hover,
-  .combo3:hover {
+  .cilios:hover {
     width: 90% !important;
     font-size: 20px;
   }
 
   .pack h4 {
-    bottom: 20px;
+    bottom: 28px;
     font-size: 1.5em;
   }
 
   .pack p {
     font-size: 18px;
+  }
+
+  .img-rotate {
+    left: 40px;
   }
 
   .sobrancelhas p,
@@ -292,30 +238,12 @@
     margin-right: 15px;
   }
 
-  /* PACOTES */
-  .combo1,
-  .combo2,
-  .combo3 {
-    position: static !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-  }
-
-  .combo1 h4,
-  .combo2 h4,
-  .combo3 h4 {
-    bottom: 20px;
-    font-size: 1.5em;
-  }
-
-  .combo1 p,
-  .combo2 p,
-  .combo3 p {
-    font-size: 18px;
-  }
-
   /* FAQ */
+
+  #faq {
+    padding: 60px 0;
+  }
+
   #faq h2 {
     right: 0;
     margin-bottom: 50px;
@@ -327,7 +255,7 @@
   }
 
   .faq-box {
-    width: 100%;
+    width: 80%;
     max-width: 350px;
     margin-right: 0;
   }
@@ -374,31 +302,14 @@
   }
 
   iframe {
-    width: 100%;
+    width: 80%;
     height: 300px;
   }
 
   /* CONTATO */
   #contato {
-    grid-template-columns: 1fr;
     height: auto;
     gap: 30px;
-  }
-
-  form {
-    width: 100%;
-    max-width: 400px;
-    padding: 30px 20px;
-    margin: 0 auto;
-  }
-
-  input,
-  textarea {
-    padding: 20px 5px;
-  }
-
-  #contato button {
-    margin: 20px 0;
   }
 
   .redes_sociais {
@@ -408,6 +319,8 @@
   .redes_sociais h2 {
     padding-left: 0;
     margin-block: 35px;
+    margin-inline: 30px;
+    font-size: 40px;
   }
 
   .redes_sociais img {

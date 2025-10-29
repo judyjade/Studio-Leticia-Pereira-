@@ -1,19 +1,19 @@
-// Seleciona os elementos
-const hamburguer = document.querySelector('.hamburguer');
-const navMenu = document.querySelector('.nav-menu');
+// Menu Hamburguer 
 
-// Abre e fecha o menu ao clicar no ícone
-hamburguer.addEventListener('click', () => {
-  hamburguer.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
+// Obtém o botão e o menu de navegação
+const botao = document.getElementById('toggleMenu');
+const menu = document.getElementById('menu');
 
-// Fecha o menu ao clicar em um link
-document.querySelectorAll('.nav-menu a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburguer.classList.remove('active');
-    navMenu.classList.remove('active');
-  });
+// Adiciona um evento de clique no botão
+botao.addEventListener('click', function() {
+    // Verifica se o menu está visível ou não
+    if (menu.style.display === 'none' || menu.style.display === '') {
+        // Se estiver escondido, mostra o menu
+        menu.style.display = 'block';
+    } else {
+        // Se estiver visível, esconde o menu
+        menu.style.display = 'none';
+    }
 });
 
 const overlay = document.createElement('div');
@@ -47,23 +47,3 @@ overlay.addEventListener('click', () => {
       }
     });
   });
-
-// Formulário 
-
-const form = document.getElementById('contato');
-const mensagemStatus = document.getElementById('mensagem_status');
-
-form.addEventListener('submit', function (e) {
-  const nome = document.getElementById('nome').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const mensagem = document.getElementById('mensagem').value.trim();
-
-  if (nome === '' || email === '' || mensagem === '') {
-    e.preventDefault();
-    mensagemStatus.textContent = 'Por favor, preencha todos os campos.';
-    mensagemStatus.style.color = 'red';
-  } else {
-    mensagemStatus.textContent = 'Enviando...';
-    mensagemStatus.style.color = 'blue';
-  }
-});
