@@ -16,22 +16,6 @@ botao.addEventListener('click', function() {
     }
 });
 
-const overlay = document.createElement('div');
-overlay.classList.add('menu-overlay');
-document.body.appendChild(overlay);
-
-hamburguer.addEventListener('click', () => {
-  hamburguer.classList.toggle('active');
-  navMenu.classList.toggle('active');
-  overlay.classList.toggle('active');
-});
-
-overlay.addEventListener('click', () => {
-  hamburguer.classList.remove('active');
-  navMenu.classList.remove('active');
-  overlay.classList.remove('active');
-});
-
 // FAQ
 
   const headers = document.querySelectorAll(".accordion-header");
