@@ -120,6 +120,8 @@
     height: 400px;
     justify-content: center;
     text-align: center;
+    background-image: none;
+    background-color: black;
   }
 
   .banner div {
@@ -163,11 +165,7 @@
   }
 
   .img_who {
-    width: 100%;
-    max-width: 350px;
-    height: 400px;
-    order: 1;
-    margin-bottom: 20px;
+    display: none;
   }
 
   /* SERVIÇOS */
