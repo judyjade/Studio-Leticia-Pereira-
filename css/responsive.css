@@ -117,7 +117,7 @@
 
   /* BANNER */
   .banner {
-    height: 400px;
+    height: 300px;
     justify-content: center;
     text-align: center;
     background-image: none;
@@ -142,10 +142,7 @@
 
   /* QUEM SOU */
   .who {
-    grid-template-columns: 1fr;
-    height: auto;
-    padding: 2em 1em;
-    text-align: center;
+    display: none;
   }
 
   .texto_who {
