@@ -233,6 +233,11 @@ li {
     animation: anima 55s linear infinite;
 }
 
+.paginas-slide2 {
+  display: inline-block;
+  animation: animaLeft 55s linear infinite;
+}
+
 .paginas-slide img {
      width: 500px;
     height: 490px;
@@ -246,6 +251,15 @@ li {
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@keyframes animaLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(50%);
     }
 }
 
@@ -378,7 +392,7 @@ li {
 
 .pagamento {
   text-align: left;
-  width: 700px;
+  width: 500px;
 }
 
 .pagamento h2 {
@@ -386,9 +400,9 @@ li {
 }
 
 .pagamento img {
-  width: 25%;
+  width: 20%;
   margin-block: 90px;
-  margin-inline: 7px;
+  margin-inline: 10px;
   background: #636363;
   padding: 20px;
   border-radius: 100%;
@@ -425,7 +439,7 @@ iframe {
 }
 
 footer {
-  background-color: #636363;
+  background-color: black;
   padding: 4em 2.5em;
 }
 

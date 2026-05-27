@@ -10,6 +10,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <title>Studio Letícia Pereira</title>
   </head>
 
@@ -35,16 +38,16 @@
     </header>
     <main>
       <section id="inicio" class="banner">
-        <div class="texto_banner">
+        <div class="texto_banner" data-aos="fade-left" data-aos-duration="1000">
           <h2>Realce sua beleza com cuidados personalizados!</h2>
           <p>Especialista em Sobrancelhas, Cílios e Depilação.</p>
         </div>
       </section>
       <section class="who">
         <div class="texto_who">
-          <h2>Quem sou?</h2>
-          <h3>Me chamo Letícia Pereira</h3>
-          <p>
+          <h2 data-aos="fade-right" data-aos-duration="800">Quem sou?</h2>
+          <h3 data-aos="fade-left" data-aos-duration="900">Me chamo Letícia Pereira</h3>
+          <p data-aos="fade-left" data-aos-duration="1000">
             Sou especialista em depilação (+4 anos) e design de sobrancelhas (+5
             anos) em Foz do Iguaçu – PR. Unindo duas paixões em uma só carreira,
             fui reconhecida como Melhor Depiladora de 2025, sempre com foco em
@@ -55,12 +58,13 @@
           src="img/img_quem-sou.jpg"
           alt="Imagem de um atendimento"
           class="img_who"
+          data-aos="fade-left" data-aos-duration="900"
         />
       </section>
       <section id="servicos">
-        <h2>Serviços</h2>
+        <h2 data-aos="fade-right" data-aos-duration="1000">Serviços</h2>
         <div class="cards">
-          <div class="pack">
+          <div class="pack" data-aos="fade-up" data-aos-duration="1000">
             <h4>Sobrancelhas</h4>
             <p>
               Design Personalizado, Design com Henna, Design Masculino,
@@ -72,7 +76,7 @@
               class="img-servicos"
             />
           </div>
-          <div class="pack">
+          <div class="pack" data-aos="fade-up" data-aos-duration="1200">
             <h4>Cílios</h4>
             <p>
               Volume Brasileiro, Volume 5D, Volume Inglês, Mega Volume
@@ -84,7 +88,7 @@
               class="img-servicos"
             />
           </div>
-          <div class="pack">
+          <div class="pack" data-aos="fade-up" data-aos-duration="1400">
             <h4>Depilação</h4>
             <p>
               Virilha Completa, Axila, Meia Perna, Perna Inteira, Braços,
@@ -99,8 +103,8 @@
         </div>
       </section>
       <section id="galeria">
-        <h2>Antes X Depois</h2>
-        <div class="container-slide">
+        <h2 data-aos-duration="1000">Antes X Depois</h2>
+        <div class="container-slide" data-aos="fade-left" data-aos-duration="500">
           <div class="paginas-slide">
             <img
               src="img/antesXdepois-01.jpg"
@@ -185,9 +189,9 @@
         </div>
       </section>
       <section id="depoimentos">
-        <h2>Depoimentos</h2>
-        <div class="container-slide">
-          <div class="paginas-slide">
+        <h2 data-aos-duration="1000">Depoimentos</h2>
+        <div class="container-slide" data-aos="fade-right" data-aos-duration="500">
+          <div class="paginas-slide2">
             <img
               src="img/Depoimento-01.jpg"
               alt="Imagens de depoimentos de clientes"
@@ -266,9 +270,9 @@
         </div>
       </section>
       <section id="precos">
-        <h2>Tabela de Preços</h2>
+        <h2 data-aos-duration="1000">Tabela de Preços</h2>
         <div class="tabela">
-          <div class="sobrancelhas">
+          <div class="sobrancelhas" data-aos="fade-up" data-aos-duration="1000">
             <p>Sobrancelhas</p>
             <ul>
               <li>Design Masculino - R$40,00 (30 min.)</li>
@@ -279,7 +283,7 @@
               <li>Micropigmentação - R$350,00 (4 h.)</li>
             </ul>
           </div>
-          <div class="depilacao">
+          <div class="depilacao" data-aos="fade-up" data-aos-duration="1200">
             <p>Depilação</p>
             <ul>
               <li>Virilha Completa - R$90,00 (30 min.)</li>
@@ -293,7 +297,7 @@
               <li>Buço - R$15,00 (5 min.)</li>
             </ul>
           </div>
-          <div class="cilios">
+          <div class="cilios" data-aos="fade-up" data-aos-duration="1400">
             <p>Cílios</p>
             <ul>
               <li>Lash Lifting c/ Tintura - R$90,00</li>
@@ -308,11 +312,11 @@
       </section>
 
       <section id="faq">
-        <h2>Perguntas Frequentes <span class="faq-icon">💬</span></h2>
+        <h2 data-aos="fade-right" data-aos-duration="1000">Perguntas Frequentes <span class="faq-icon">💬</span></h2>
 
         <div class="faq-container">
           <!-- Sobrancelhas -->
-          <div class="faq-box">
+          <div class="faq-box" data-aos="fade-up" data-aos-duration="1000">
             <h3>Sobrancelhas</h3>
 
             <div class="accordion-item">
@@ -353,7 +357,7 @@
           </div>
 
           <!-- Cílios -->
-          <div class="faq-box">
+          <div class="faq-box" data-aos="fade-up" data-aos-duration="1200">
             <h3>Cílios</h3>
 
             <div class="accordion-item">
@@ -388,7 +392,7 @@
           </div>
 
           <!-- Depilação -->
-          <div class="faq-box">
+          <div class="faq-box" data-aos="fade-up" data-aos-duration="1400">
             <h3>Depilação</h3>
 
             <div class="accordion-item">
@@ -428,7 +432,7 @@
 
       <section id="como_chegar">
         <div class="pagamento">
-          <h2>Formas de Pagamento</h2>
+          <h2 data-aos="fade-right" data-aos-duration="1000">Formas de Pagamento</h2>
 
           <img src="img/icons8-foto-500.png" alt="Ícone do Pix" />
           <img src="img/dolar.png" alt="Ícone do Sifrão" />
@@ -436,7 +440,7 @@
         </div>
 
         <div class="como-chegar">
-          <h2>Como chegar?</h2>
+          <h2 data-aos="fade-right" data-aos-duration="1000">Como chegar?</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.4805654820457!2d-54.52560192505565!3d-25.48901463522846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x878c3aa83fdfbbf9%3A0xed38c2df0f2be3a9!2sStudio%20leticia%20pereira!5e0!3m2!1spt-BR!2sbr!4v1760810620942!5m2!1spt-BR!2sbr"
             width="600"
@@ -446,23 +450,6 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-        </div>
-      </section>
-      <section id="contato">  
-        <div class="redes_sociais">
-          <h2>Nos siga nas Redes Sociais!</h2>
-
-          <a
-            href="https://wa.me/5545999094373?text=Ol%C3%A1%2C%20tudo%20bem%20%3F"
-          >
-            <img src="img/whatsapp.png" alt="Ícone do whatsapp" />
-          </a>
-
-          <a
-            href="https://www.instagram.com/studioleticiapereiraa_?igsh=MTUwaHhqZXc1c3l6ZA=="
-          >
-            <img src="img/instagram.png" alt="Ícone do instagram" />
-          </a>
         </div>
       </section>
     </main>
